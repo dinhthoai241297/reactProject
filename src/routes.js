@@ -5,6 +5,5 @@ import App from './components/App';
 export default (
     <Router >
         <Route path="/" component={App} />
-        {/* <Route path="*" component={ErrorPage} /> */}
     </Router>
 );

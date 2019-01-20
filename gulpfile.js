@@ -31,4 +31,4 @@ gulp.task('css', function () {
 });
 
 // Default Task
-gulp.task('default', ['copy-fonts', 'copy-images', 'scripts', 'css']);
+gulp.task('default', gulp.parallel('copy-fonts', 'copy-images', 'scripts', 'css'));
