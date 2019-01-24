@@ -14,7 +14,7 @@
         "build:html": "babel-node tools/buildHtml.js",
         "prebuild": "npm-run-all clean-dist gulp build:html",
         "build": "babel-node tools/build.js",
-        "postbuild": "babel-node tools/distServer.js"
+        "postbuild": "babel-node appServer.js"
     },
     "author": "No name",
     "license": "MIT",
@@ -22,8 +22,11 @@
         "prop-types": "^15.6.2",
         "react": "^16.7.0",
         "react-dom": "^16.7.0",
+        "react-facebook-login": "^4.1.1",
         "react-redux": "^6.0.0",
         "react-router-dom": "^4.3.1",
+        "react-sidebar": "^3.0.2",
+        "react-toastify": "^4.5.2",
         "redux": "^4.0.1",
         "redux-thunk": "^2.3.0",
         "superagent": "^4.1.0"

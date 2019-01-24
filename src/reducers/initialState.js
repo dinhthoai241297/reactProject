@@ -1,5 +1,10 @@
 export default {
     app: {
-        language: 'vi'
+        language: 'vi',
+        loading: false,
+        test: ''
+    },
+    user: {
+        token: ''
     }
 };

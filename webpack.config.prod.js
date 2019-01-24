@@ -15,7 +15,10 @@ let config = {
         contentBase: './dist'
     },
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin(true)
+        new webpack.optimize.OccurrenceOrderPlugin(true),
+        new webpack.DefinePlugin({
+            'process.evn.facebookID': JSON.stringify('2052371951544423')
+        })
     ],
     optimization: {
         minimize: true,

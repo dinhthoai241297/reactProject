@@ -18,7 +18,10 @@ let config = {
         contentBase: path.resolve(__dirname, 'src')
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.DefinePlugin({
+            'process.evn.facebookID': JSON.stringify('2052371951544423')
+        })
     ],
     resolve: {
         extensions: ['*', '.js', '.jsx']
